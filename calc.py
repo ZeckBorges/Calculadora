@@ -278,6 +278,10 @@ class CalculatorApp(UserControl):
 
 def main(page: Page):
     page.title = "Calc App"
+    page.window_height = 400
+    page.window_width = 350
+    page.window_resizable = False
+    page.window_maximizable = False
 
     # create application instance
     calc = CalculatorApp()
